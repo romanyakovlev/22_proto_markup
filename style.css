@@ -24,7 +24,7 @@ body {
     font-family:BalsamiqSansRegular;
 }
 
-.block-1 {padding-top: 25px;    padding-bottom: 25px;}
+.block-1 {padding-top: 25px;}
 
 .block-2 {background-color: #E0E0E0;}
 
@@ -35,4 +35,8 @@ body {
 
 .make-underline-border > *{
     border-bottom: 1px solid #BDBDBD;
+}
+
+.active {
+    background: white;
 }
