@@ -40,3 +40,9 @@ body {
 .active {
     background: white;
 }
+
+
+.footer-class p{
+    margin: 0px;
+    color: black;
+}
