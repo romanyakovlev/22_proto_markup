@@ -46,3 +46,18 @@ body {
     margin: 0px;
     color: black;
 }
+
+.form-border-style{
+    border: 2px solid black;
+}
+
+@media (max-width:500px){
+    .button-font h4 {
+        font-size:12px;
+    }
+}
+
+.button-font:hover{
+    color:white;
+    background-color: black;
+}
