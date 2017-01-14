@@ -34,7 +34,7 @@
               <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav navbar-left">
                     <li><a href="#" style="color:black;">Регион:</a></li>
-                    <li><a class="decorated" href="#" style="color:#0D47A1" data-toggle="dropdown">Новосибирск и область<span class="caret"></span></a>                      </a>
+                    <li><a class="decorated" href="#" style="color:#0D47A1" data-toggle="dropdown">Новосибирск и область<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -79,7 +79,8 @@
                 <div class="pull-left">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> ЖБИ
+                        <input type="checkbox"> ЖБИ<font style="color:#9E9E9E;">
+                            ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )</font>
                       </label>
                     </div>
                     <div class="checkbox">
@@ -140,6 +141,9 @@
 
 <!--Orders-->
 
+
+
+
 <div class="container">
     <div class="row"  style="margin-top:20px;margin-bottom:20px;text-align:center;">
         <div class="col-xs-12">
@@ -148,97 +152,87 @@
     </div>
     <div class="row"  style="margin-top:20px;margin-bottom:20px;">
         <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-            <div class="row">
-                <!-- Orders navigation -->
-                <nav class="navbar navbar-orders" style="margin-bottom:0px;min-height:0px;">
-                     <div class="" style="padding:0px;">
-                         <div class="row">
-                             <div class="col-xs-12">
-                            <div class="pull-left">
-                               <div class="navbar-header">
-                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                   <span class="icon-bar"></span>
-                                   <span class="icon-bar"></span>
-                                   <span class="icon-bar"></span>
-                                 </button>
-                                </div>
-                                 <div class="collapse navbar-collapse" id="myNavbar">
-                                     <ul class="nav navbar-nav navbar-left">
-                                       <li><a href="#" style="color:Grey;">раздел:</a></li>
-                                       <li><a class="decorated" href="#" style="color:Grey" data-toggle="dropdown">Все<span class="caret"></span></a>                      </a>
-                                         <ul class="dropdown-menu">
-                                           <li><a href="#">Action</a></li>
-                                           <li><a href="#">Another action</a></li>
-                                           <li><a href="#">Something else here</a></li>
-                                       </li>
-                                     </ul>
-                                 </div>
-                             </div>
 
-                             <div class="pull-right">
-                                <div class="navbar-header">
-                                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                  </button>
-                                 </div>
-                                  <div class="collapse navbar-collapse" id="myNavbar">
-                                      <ul class="nav navbar-nav navbar-left">
-                                        <li><a href="#" style="color:Grey;">Регион:</a></li>
-                                        <li><a class="decorated" href="#" style="color:Grey" data-toggle="dropdown">Новосибирская область<span class="caret"></span></a>                      </a>
-                                          <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
+            <div style="word-wrap: break-word;" class="margin-for-rows-and-hrs">
+                <div class="row">
+                    <!-- Orders navigation -->
+
+                    <nav style="min-height:0px;margin-bottom:5px;" class="navbar navbar-orders">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-left">
+                                    <ul class="list-inline">
+                                        <li><a href="#" style="color:#9E9E9E;">раздел:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="decorated" href="#" style="color:#9E9E9E" data-toggle="dropdown">Все<span class="caret"></span></a>                      </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Action</a></li>
+                                                   <li><a href="#">Another action</a></li>
+                                                   <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                      </ul>
-                                  </div>
-                              </div>
+                                    </ul>
+                                </div>
+                                <div class="pull-right">
+                                    <ul class="list-inline">
+                                        <li><a href="#" style="color:#9E9E9E;">Регион:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="decorated" href="#" style="color:#9E9E9E" data-toggle="dropdown">Новосибирская область<span class="caret"></span></a>                      </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Action</a></li>
+                                                   <li><a href="#">Another action</a></li>
+                                                   <li><a href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
 
-
-
-
-
-                       </div>
-                         </div>
-                         </div>
-                 </nav>
-            </div>
-
-            <div class="margin-for-rows-and-hrs">
+                </div>
             <hr>
             <div class="row" style="padding-bottom:10px;">
                 <p style="padding-bottom:20px;padding-top:10px;">
-                    <a class="pull-left" style="color:Grey;">вчера, в 21:30</a>
-                    <a href="#" class="pull-right" style="color:Grey;text-decoration:underline;">в закладки</a>
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
                 </p>
                 <p>Текстексттекстетксттестеывфафывафыавфывафыа</p>
                 <p>Какое-то имя</p>
                 <a class="btn btn-default" href="#" role="button"
-                style="border-radius:10px;background-color:#9E9E9E;border:none;">Показать телефон</a>
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
             </div>
             <hr>
             <div class="row" style="padding-bottom:10px;">
                 <p style="padding-bottom:20px;padding-top:10px;">
-                    <a class="pull-left" style="color:Grey;">вчера, в 21:30</a>
-                    <a href="#" class="pull-right" style="color:Grey;text-decoration:underline;">в закладки</a>
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
                 </p>
                 <p>Текстексттекстетксттестеывфафывафыавфывафыа</p>
                 <p>Какое-то имя</p>
                 <a class="btn btn-default" href="#" role="button"
-                style="border-radius:10px;background-color:#9E9E9E;border:none;">Показать телефон</a>
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
             </div>
             <hr>
             <div class="row" style="padding-bottom:10px;">
                 <p style="padding-bottom:20px;padding-top:10px;">
-                    <a class="pull-left" style="color:Grey;">вчера, в 21:30</a>
-                    <a href="#" class="pull-right" style="color:Grey;text-decoration:underline;">в закладки</a>
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
                 </p>
                 <p>Текстексттекстетксттестеывфафывафыавфывафыа</p>
                 <p>Какое-то имя</p>
                 <a class="btn btn-default" href="#" role="button"
-                style="border-radius:10px;background-color:#9E9E9E;border:none;">Показать телефон</a>
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
             </div>
             <hr>
             </div>
@@ -251,6 +245,10 @@
         </div>
     </div>
 </div>
+
+
+
+
 
 
 <br><br>
