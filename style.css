@@ -61,3 +61,15 @@ body {
 .margin-for-rows-and-hrs > div, .margin-for-rows-and-hrs > hr{
     margin: 0px 15px 0px 15px;
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+@media (max-width:970px){
+    .margin-for-sm-screens {
+        margin-top: 20px;
+    }
+}
