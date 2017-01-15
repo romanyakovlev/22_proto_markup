@@ -97,3 +97,7 @@ body {
 /* end 2 */
 
 /* 3. 3_geo */
+
+ .form-border-style:hover {
+     color: black;
+ }
