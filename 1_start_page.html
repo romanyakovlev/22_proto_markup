@@ -1,58 +1,403 @@
-<div class="container-fluid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- Main Navigation-->
+
+<nav class="navbar navbar-default navbar-main">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#" style="color:black;">Регион:</a></li>
+                    <li><a class="decorated" href="#" style="color:#0D47A1" data-toggle="dropdown">Новосибирск и область<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">не Москва</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a class="decorated" style="color:#0D47A1" href="#">Леонид Федорович</a></li>
+                      <li><a class="decorated" style="color:#0D47A1" href="#">выход</a></li>
+                  </ul>
+              </div>
+            </div>
+              </div>
+              </div>
+      </nav>
+
+<div class="container-fluid block-1">
   <div class="row" >
-    <div class="col-sm-10 col-sm-offset-2">Участники в Новосибирске: 105 оптовых компаний 25 производителей</div>
+    <div class="col-sm-12 col-md-10  col-md-offset-2 col-lg-9  col-lg-offset-3"><p style="font-size:20px;">
+    Участники в Новосибирске: <u>105 оптовых компаний</u> <u>25 производителей</u></p></div>
   </div>
 </div>
 
+<!-- Container with a form -->
+
 <div class="container">
   <div class="row" >
-    <div class="col-sm-10 col-sm-offset-1 block-2-font-1" >ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА</div>
- привет меня  зовут варя мне 10 лет моего папу зовут Андрей а мою маму зовут Лена моему папе 58 лет а моей маме 38
- я учусь в 3А классе у меня есть брат Рома ибрат Данил
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3" style="margin-top:20px;">
+        <h2 style="text-align: center;">ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА</h2>
+        <div class="block-2" style="margin-top:10px;border:3px solid black;">
+        <form style="padding-left:25px;">
+        <div class="row" style="margin-bottom:20px;padding-top:10px;">
+            <div class="col-sm-3">
+                <h3>Я ищу</h3>
+            </div>
+            <div class="col-sm-9" style="text-align:left;">
+                <div class="pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ЖБИ<font style="color:#9E9E9E;">
+                            ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )</font>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Кирпич / Газобетон / Брус
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Бетон / Раствор
+                      </label>
+                    </div>
+                    <div class="dropdown">
+                              <a href="#" class="dropdown-toggle pull-left" data-toggle="dropdown">
+                                в Новосибирске и области<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                              </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" style="margin-right:10px;margin-bottom:20px;">
+            <div class="col-sm-3">
+                <label for="exampleInputName2"><h4 style="pull-top">Описание*</h4></label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" class="form-control  form-border-style" id="exampleInputName2">
+            </div>
+        </div>
+        <div class="row" style="margin-right:10px;margin-bottom:20px;">
+            <div class="col-sm-3">
+                <label for="exampleInputName2"><h4 style="pull-top">Телефон*</h4></label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control form-border-style" id="exampleInputName2">
+            </div>
+            <div class="col-sm-2">
+                <label for="exampleInputName2"><h4 style="pull-top">Имя</h4></label>
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-border-style" id="exampleInputName2">
+            </div>
 
 
+        </div>
+        <div class="" style="padding-bottom:20px;word-wrap: break-word;">
+        <button style="border-radius:35px;width:65%;margin:auto;padding: 10px 30px 10px 30px;"
+        type="submit" class="btn btn-default btn-lg btn-block  form-border-style button-font"><h4 >ОПУБЛИКОВАТЬ ЗАЯВКУ</h4></button>
+        </div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
 
+<!--Orders-->
 
+<div class="container">
+    <div class="row"  style="margin-top:20px;margin-bottom:20px;text-align:center;">
+        <div class="col-xs-12">
+            <h2>Свежие заявки</h2>
+        </div>
+    </div>
+    <div class="row"  style="margin-top:20px;margin-bottom:20px;">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 
+            <div style="word-wrap: break-word;" class="margin-for-rows-and-hrs">
+                <div class="row">
+                    <!-- Orders navigation -->
 
- <div class="container" style="margin-top:20px;">
-     <div class="row">
-         <div class="col-xs-6 col-xs-offset-3">
-             <div class="row">
-                 <div class="col-xs-2">
-                     <!-- Controls -->
-                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                       <span class="sr-only">Previous</span>
-                     </a>
-                 </div>
-                 <div class="col-xs-8">
-                     <!-- Карусель -->
-                     <div id="carousel-example-generic" style="background-color:black;height:200px;width:200px;" class="carousel slide" data-ride="carousel">
-                       <!-- Wrapper for slides -->
-                       <div class="carousel-inner" role="listbox">
-                         <div class="item active" >
-                             <div class="carousel-caption" style="background-color:black;height:200px;width:200px;">
-                               <p>text1</p>
-                             </div>
-                         </div>
-                         <div class="item" style="background-color:black;height:200px;width:0px;">
-                             <div class="carousel-caption">
-                               <p>text1</p>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
+                    <nav style="min-height:0px;margin-bottom:5px;" class="navbar navbar-orders">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-left">
+                                    <ul class="list-inline">
+                                        <li><a href="#" style="color:#9E9E9E;">раздел:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="decorated" href="#" style="color:#9E9E9E" data-toggle="dropdown">Все<span class="caret"></span></a>                      </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Первый раздел</a></li>
+                                                   <li><a href="#">Второй раздел</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pull-right">
+                                    <ul class="list-inline">
+                                        <li><a href="#" style="color:#9E9E9E;">Регион:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="decorated" href="#" style="color:#9E9E9E" data-toggle="dropdown">Новосибирская область<span class="caret"></span></a>                      </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Москва</a></li>
+                                                   <li><a href="#">не Москва</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
 
-             </div>
-             <div class="col-xs-2">
+                </div>
+            <hr>
+            <div class="row" style="padding-bottom:10px;">
+                <p style="padding-bottom:20px;padding-top:10px;">
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
+                </p>
+                <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+                <p>Алексей</p>
+                <a class="btn btn-default" href="#" role="button"
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
+                <font style="font-size:12px;">12 просмотров</font>
+            </div>
+            <hr>
+            <div class="row" style="padding-bottom:10px;">
+                <p style="padding-bottom:20px;padding-top:10px;">
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
+                </p>
+                <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+                <p>Алексей</p>
+                <a class="btn btn-default" href="#" role="button"
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
+                <font style="font-size:12px;">12 просмотров</font>
+            </div>
+            <hr>
+            <div class="row" style="padding-bottom:10px;">
+                <p style="padding-bottom:20px;padding-top:10px;">
+                    <a class="pull-left" style="color:#757575;">вчера, в 21:30</a>
+                    <span style="color:#757575;" class="glyphicon glyphicon-star pull-right">
+                        <a href="#" style="color:#757575;text-decoration:underline;">в закладки</a>
+                    </span>
+                </p>
+                <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+                <p>Алексей</p>
+                <a class="btn btn-default" href="#" role="button"
+                style="border-radius:10px;background-color:#E0E0E0;border:none;">Показать телефон</a>
+                <font style="font-size:12px;">12 просмотров</font>
+            </div>
+            <hr>
+            </div>
+        </div>
+    </div>
+    <div class="row"  style="margin-top:20px">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 make-underline-border">
+            <button style="border-radius:35px;width:65%;margin:auto;padding: 10px 30px 10px 30px;"
+            type="submit" class="btn btn-default btn-lg btn-block  form-border-style button-font"><h4>Просмотреть все заявки</h4></button>
+        </div>
+    </div>
+</div>
 
-                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                   <span class="sr-only">Next</span>
-                 </a>
-             </div>
-         </div>
+<br><br>
 
-     </div>
- </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 vcenter">
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+              <!-- Слайды карусели -->
+              <div class="carousel-inner">
+                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                <div class="active item" style="background:white;" >
+                        <div class="row" >
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                                <div class="row">
+                                  <div class="col-xs-12" style="word-wrap: break-word;">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <a href="#">
+                                            <img class="media-object" src="http://icons.iconarchive.com/icons/icons8/android/128/Users-User-icon.png">
+                                          </a>
+                                        </div>
+                                        <div class="media-body">
+                                          <h4 class="media-heading">Кирилл, 29 лет, г. Барабинск</h4>
+                                            Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="item" style="background:white;" >
+                        <div class="row" >
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                                <div class="row">
+                                  <div class="col-xs-12" style="word-wrap: break-word;">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <a href="#">
+                                            <img class="media-object" src="http://icons.iconarchive.com/icons/icons8/android/128/Users-User-icon.png">
+                                          </a>
+                                        </div>
+                                        <div class="media-body">
+                                          <h4 class="media-heading">Кирилл, 29 лет, г. Барабинск</h4>
+                                            Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="item" style="background:white;" >
+                        <div class="row" >
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                                <div class="row">
+                                  <div class="col-xs-12" style="word-wrap: break-word;">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <a href="#">
+                                            <img class="media-object" src="http://icons.iconarchive.com/icons/icons8/android/128/Users-User-icon.png">
+                                          </a>
+                                        </div>
+                                        <div class="media-body">
+                                          <h4 class="media-heading">Кирилл, 29 лет, г. Барабинск</h4>
+                                            Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!  Бла-бла, мне помогло, все супер!
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+              </div>
+              <!-- Навигация для карусели -->
+              <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+              <a  style="background:none;" class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span style="color:black;" class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+              <a style="background:none;" class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span style="color:black;" class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+        </div><!--
+     --><div class="col-xs-12 col-sm-12 col-md-2 text-center vcenter margin-for-sm-screens">
+            <button style="box-shadow:5px 5px;" type="submit" class="btn btn-default form-border-style button-font">Оставить отзыв</button>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<!--Footer-->
+
+<div class="container-fluid" style="background-color: #E0E0E0;">
+  <div class="row" style="text-align: center;margin:5px 0px 10px 0px;" >
+      <div class="col-sm-12"><h2>Вы поставщик?</h2></div>
+  </div>
+
+  <div class="row"  style=" margin-bottom:40px;">
+      <div class="col-sm-10 col-sm-offset-1">
+          <div class="row">
+              <div class="col-sm-6 col-md-4 col-md-offset-1 footer-class">
+                  <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66</p>
+                  <br>
+                  <p>Текст с дополнительной информацией по условиям сотрудничества</p>
+                  <p>Возможно стоит вынести его на отдельную страницу.</p>
+                  <p>Текст с дополнительной информацией по условиям сотрудничеаства.</p>
+                  <p>Возможно стоит вынести его на отдельную страницу.</p>
+              </div>
+
+              <div class="col-sm-6 col-md-6">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label style="padding-right:0px;" for="inputEmail3" class="col-sm-4 control-label">Организация</label>
+                      <div class="col-sm-8">
+                        <input type="email" class="form-control form-border-style" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label style="padding-right:0px;" for="inputPassword3" class="col-sm-4 control-label">Телефон</label>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control form-border-style" id="inputPassword3">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label style="padding-right:0px;" for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                      <div class="col-sm-8">
+                        <input type="email" class="form-control form-border-style" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label style="padding-right:0px;" for="inputPassword3" class="col-sm-4 control-label">Имя</label>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control form-border-style" id="inputPassword3">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class=" col-sm-8 col-sm-offset-4">
+                        <button style="box-shadow:5px 5px;" type="submit" class="btn btn-default form-border-style button-font">Отправить информацию</button>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="just_scripts">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+</div>
+
+</body>
+</html>
