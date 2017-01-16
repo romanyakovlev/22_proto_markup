@@ -101,3 +101,37 @@ body {
  .form-border-style:hover {
      color: black;
  }
+
+ /* 4. 4_profile */
+
+
+ .style-pills > li > a{
+     border: 2px solid black;
+     border-radius: 0px;
+     padding: 5px 10px 5px 10px;
+     color: black;
+ }
+
+.style-pills > li+li {
+    margin-top:0px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+    background-color: black;
+}
+
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: ">";
+    padding: 0 5px;
+}
+
+
+
+@media (max-width:768px){
+    .off-abs-pos {
+        position: relative !important;
+    }
+}
