@@ -135,3 +135,31 @@ body {
         position: relative !important;
     }
 }
+
+/* end 4 */
+
+/* 6. 6_katalog_main */
+
+.style-thumbnail div {
+    border: none !important;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.button-font-katalog {
+    background-color: #E0E0E0;
+}
+
+.button-font-katalog:hover {
+    background-color: black;
+    color: white;
+}
+
+.style-row > div+div {
+    border-top: 3px solid black;
+}
+
+.style-row div {
+    padding:5px;
+    margin:0px;
+}
