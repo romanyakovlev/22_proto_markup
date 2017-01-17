@@ -1,22 +1,4 @@
-
-/* 1. Base template и  1_start_page*/
-
-.navbar-main {
-    background-color: #E0E0E0;
-    min-height: 0px;
-    border-style: none;
-}
-
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 40px;
-    height: 40px;
-    padding-top: 0;
-}
-
-.decorated {
-    text-decoration: underline;
-}
+/* Font  */
 
 @font-face {
     font-family:BalsamiqSansRegular;
@@ -27,48 +9,186 @@ body {
     font-family:BalsamiqSansRegular;
 }
 
-.block-1 {padding-top: 25px;}
+/* Breadcrumbs on navigation*/
 
-.block-2 {background-color: #E0E0E0;}
-
-
-.navbar-orders > .nav>li>a:focus, .nav>li>a:hover {
-    background-color: white;
-}
-
-.active {
-    background: white;
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: ">";
+    padding: 0 5px;
 }
 
 
-.footer-class p{
+/* BASE TEMPLATE */
+
+/* Main navigation */
+
+.main-nav {
+    background-color: #E0E0E0;
+    min-height: 0px;
+    border-style: none;
+}
+
+.main-nav-a {
+    text-decoration: underline;
+    color: #0D47A1 !important;
+}
+
+.main-nav-region {
+    color:black;
+}
+
+.navbar-nav li a {
+    line-height: 40px;
+    height: 40px;
+    padding-top: 0;
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: #E0E0E0;
+}
+
+.footer-row-1 {
+    text-align: center;
+    margin:5px 0px 10px 0px;
+}
+
+.footer-row-2 {
+    margin-bottom:40px;
+}
+
+.footer-div p{
     margin: 0px;
     color: black;
 }
 
-.form-border-style{
+/* Popover */
+
+.popover-div {
+    height: 150px;
+    width: 245px;
+    font-size:16px;
+}
+
+.popover-button {
+    background-color:white;
+    box-shadow:5px 5px;
+}
+
+.popover-p1 {
+    margin:0px;
+}
+
+.popover-p2 {
+    text-align:center;
+}
+
+#yes_id {
+    color:black;
+}
+
+
+/* START_PAGE_TEMPLATE */
+
+/* Header */
+
+.start-form-div-1 {
+    padding-top: 25px;
+}
+
+.start-form-div-1 p {
+    font-size:20px;
+}
+
+/* Form container */
+
+.start-form-div-2 {
+    background-color: #E0E0E0;
+    margin-top:10px;
+    border:3px solid black;
+}
+
+.start-form-div-2 form {
+    padding-left: 25px;
+}
+
+.start-form-div-2 form {
+    padding-left: 25px;
+}
+
+.start-form-row-1 {
+    margin-bottom:20px;
+    padding-top:10px;
+}
+
+.start-form-row-1 > div > div > div > label > font {
+    color:#9E9E9E;
+}
+
+.start-form-row-2 {
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.start-form-button {
+    padding-bottom:20px;word-wrap: break-word;
+}
+
+.start-form-button button {
+    border-radius:35px;
+    width:65%;
+    margin:auto;
+    padding: 10px 30px 10px 30px;
     border: 2px solid black;
 }
 
-@media (max-width:500px){
-    .button-font h4 {
-        font-size:12px;
-    }
+/* Orders */
+
+.start-orders-container > div {
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
-.button-font:hover{
-    color:white;
-    background-color: black;
+.start-orders-a {
+    color:#9E9E9E;
 }
 
-.margin-for-rows-and-hrs > div, .margin-for-rows-and-hrs > hr{
-    margin: 0px 15px 0px 15px;
+.start-orders-div {
+    padding-bottom:10px;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.start-orders-div p:first-child {
+    padding-bottom:20px;
+    padding-top:10px;
+}
+
+.start-orders-div > p  a,
+.start-orders-div > p  span {
+    color:#757575;
+}
+
+.start-orders-div > p > span > a {
+    text-decoration: underline;
+}
+
+.start-orders-div > font {
+    font-size:12px;
+}
+
+.start-orders-div >  a{
+    border-radius:10px;
+    background-color:#E0E0E0;
+    border:none;
+}
+
+.margin-for-rows-and-hrs {
+    word-wrap: break-word;
+}
+
+.margin-for-rows-and-hrs nav {
+    min-height:0px;
+    margin-bottom:5px;
 }
 
 @media (max-width:970px){
@@ -77,11 +197,69 @@ body {
     }
 }
 
-/* end 1 */
+.margin-for-rows-and-hrs > div, .margin-for-rows-and-hrs > hr{
+    margin: 0px 15px 0px 15px;
+}
 
-/* 2. 2_zayavki */
+.navbar-orders > .nav>li>a:focus, .nav>li>a:hover {
+    background-color: white;
+}
+
+/* Carousel */
+
+.start-carousel-row > div{
+    word-wrap: break-word;
+}
+
+.active {
+    background: white;
+}
+
+.start-carousel-div > a {
+    background: none !important;
+}
+
+.start-carousel-div > a > span {
+    color: black;
+}
+
+/* General */
+
+.border-style{
+    border: 2px solid black;
+}
+
+@media (max-width:500px){
+    .button-style h4 {
+        font-size:12px;
+    }
+}
+
+.button-style:hover{
+    color:white;
+    background-color: black;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.shadow {
+    box-shadow:5px 5px;
+}
 
 
+/* ZAYAVKI_TEMPLATE */
+
+/* Paginator */
+
+.zayavki-paginator ul {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .pagination>li>a,
 .pagination>li>span {
@@ -94,16 +272,45 @@ body {
 }
 
 
-/* end 2 */
+ /*  PROFILE TEMPLATE */
 
-/* 3. 3_geo */
+.profile-row-1 {
+    margin-bottom:20px;
+}
 
- .form-border-style:hover {
-     color: black;
- }
+.profile-row-1 > div {
+    margin-bottom:25px;
+}
 
- /* 4. 4_profile */
+.profile-row-2 {
+    position:relative;
+}
 
+.profile-font {
+    margin-left:15px;
+    font-size:36px;
+}
+
+.profile-div {
+    position:absolute;
+    right: -15px;
+    bottom: 5px;
+}
+
+.profile-div > a {
+    font-size:22px;
+}
+
+.profile-col-1 {
+    z-index:1;
+    left: 17px;
+}
+
+.profile-col-2 {
+    background-color:white;
+    z-index:2;
+    border:2px solid black;
+}
 
  .style-pills > li > a{
      border: 2px solid black;
@@ -122,23 +329,14 @@ body {
     background-color: black;
 }
 
-.breadcrumb > li + li:before {
-    color: #ccc;
-    content: ">";
-    padding: 0 5px;
-}
-
-
-
 @media (max-width:768px){
-    .off-abs-pos {
+    .off-abs-pos-for-sm-screens {
         position: relative !important;
     }
 }
 
-/* end 4 */
 
-/* 6. 6_katalog_main */
+/* KATALOG MAIN TEMPLATE */
 
 .style-thumbnail div {
     border: none !important;
@@ -146,20 +344,61 @@ body {
     text-decoration: underline;
 }
 
-.button-font-katalog {
-    background-color: #E0E0E0;
+.style-thumbnail img {
+    max-width:100%;
 }
 
-.button-font-katalog:hover {
-    background-color: black;
-    color: white;
+.katalog-row {
+    border:3px solid black;
 }
 
-.style-row > div+div {
+.katalog-row > div+div {
     border-top: 3px solid black;
 }
 
-.style-row div {
+.katalog-row div {
     padding:5px;
     margin:0px;
+}
+
+.katalog-button {
+    border-radius:35px;
+    width:65%;
+    margin:auto;
+    padding: 5px 0px 5px 0px;
+    border: 2px solid black;
+}
+
+
+/* KATALOG LIST TEMPLATE */
+
+.katalog-col-1 {
+    padding-left:0px;
+    font-size:34px;
+}
+
+.katalog-col-2 {
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.breadcrumbs-style {
+    background-color:white;
+    margin:0px;
+}
+
+
+/* KATALOG END PAGE TEMPLATE */
+
+.katalog-button-2 {
+background-color: #E0E0E0;
+    width: 100%;
+}
+
+.border-style-2{
+    border: 2px solid black;
+}
+
+.border-style-2 div {
+    padding-top: 15px;
 }
