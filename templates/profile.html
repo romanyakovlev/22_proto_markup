@@ -1,0 +1,66 @@
+{% extends "base_template.html" %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-xs-2 col-sm-1 col-md-offset-2 col-lg-offset-2 vcenter">
+        <a href="index.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAaVBMVEX///8AAADn5+cFBQXGxsa+vr50dHSbm5uioqKurq4UFBTx8fHu7u5paWl5eXlcXFw3NzdEREQPDw80NDQ8PDzj4+MjIyP5+fnb29u4uLgdHR0mJibV1dV/f3+Pj49SUlKRkZEtLS1VVVUW9TQVAAABXklEQVRYhe3Xa2+CMBSA4VMElIuTi4JzTGT//0euVKiFFnraxixLON+wfR8lqVEA3jx17dZHRfHp1O8I2TkIfe8iPHt7gfVlJgr1/Ts17NNEFEJCcsMeQBRyQmLTHiAteyEwA4ReFNAA67NkvOQCFpj1LwEJSD0VOvpSEeAART8KNwyg7AG87nkstcBCzwUdsNiPggZY6anwxU+UVT8IxYqg6bUC688rPcCl6gXful8VUP2KgOwXBXRPhZtCMOgBrrJg1CsEw14SjPuZYNFPBIs+OvrQxIPA++hnj+x9+p30uBAP/ZVCC2d8PnvCtjKhgmr4/AG9OhgBTCigaUN2/xYANGX1SmyAyWzABrwJuJ/4PGyABxFmsoIEjiLw8VeAV9O5OADsn6a3Af8LyENhOhHIxJV8EZCGA9LIgK/axp57U9VKIwHQyruGOw/llVbu6Tt5s+E/+cl8Bf/wqJ9feVIXyR1vSiQAAAAASUVORK5CYII" alt="">
+            Логотип
+        </a>
+    </div><!--
+ --><div class="col-xs-8 vcenter ">
+        <ol class="breadcrumb breadcrumbs-style">
+            <li><a href="zayavki.html">Главная</a></li>
+            <li class="active">Личный кабинет</li>
+        </ol>
+    </div>
+    </div>
+</div>
+
+    <!-- Profile container-->
+
+    <div class="container">
+        <div class="row profile-row-1">
+            <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                <div class="row profile-row-2">
+                        <div class="col-sx-12 col-sm-8">
+                            <font class="profile-font">Личный кабинет</font>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 profile-div off-abs-pos-for-sm-screens" >
+                            <a href="#">Оставить отзыв</a>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 profile-col-1">
+                        <ul class="nav nav-pills nav-stacked style-pills">
+                            <li class="active"><a data-toggle="pill" href="#home">Моя организация</a></li>
+                            <li><a data-toggle="pill" href="#menu1">Смена пароля</a></li>
+                            <li><a data-toggle="pill" href="#menu2">Моя рассылка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-9 tab-content profile-col-2">
+                        <div id="home" class="tab-pane fade in active">
+                            <h3>Моя организация</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h3>Смена пароля</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <h3>Моя рассылка</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

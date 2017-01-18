@@ -1,0 +1,108 @@
+{% extends "base_template.html" %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-xs-2 col-sm-1 col-md-offset-2 col-lg-offset-2 vcenter">
+        <a href="index.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAaVBMVEX///8AAADn5+cFBQXGxsa+vr50dHSbm5uioqKurq4UFBTx8fHu7u5paWl5eXlcXFw3NzdEREQPDw80NDQ8PDzj4+MjIyP5+fnb29u4uLgdHR0mJibV1dV/f3+Pj49SUlKRkZEtLS1VVVUW9TQVAAABXklEQVRYhe3Xa2+CMBSA4VMElIuTi4JzTGT//0euVKiFFnraxixLON+wfR8lqVEA3jx17dZHRfHp1O8I2TkIfe8iPHt7gfVlJgr1/Ts17NNEFEJCcsMeQBRyQmLTHiAteyEwA4ReFNAA67NkvOQCFpj1LwEJSD0VOvpSEeAART8KNwyg7AG87nkstcBCzwUdsNiPggZY6anwxU+UVT8IxYqg6bUC688rPcCl6gXful8VUP2KgOwXBXRPhZtCMOgBrrJg1CsEw14SjPuZYNFPBIs+OvrQxIPA++hnj+x9+p30uBAP/ZVCC2d8PnvCtjKhgmr4/AG9OhgBTCigaUN2/xYANGX1SmyAyWzABrwJuJ/4PGyABxFmsoIEjiLw8VeAV9O5OADsn6a3Af8LyENhOhHIxJV8EZCGA9LIgK/axp57U9VKIwHQyruGOw/llVbu6Tt5s+E/+cl8Bf/wqJ9feVIXyR1vSiQAAAAASUVORK5CYII" alt="">
+            Логотип
+        </a>
+    </div><!--
+ --><div class="col-xs-8 vcenter ">
+        <ol class="breadcrumb breadcrumbs-style">
+            <li><a href="zayavki.html">Главная</a></li>
+            <li class="active">Каталог организаций</li>
+        </ol>
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <div class="row style-thumbnail">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+                    <img src="http://mathsolutionz.org/wp-content/uploads/2016/05/diagonal.png" alt="...">
+                    <p><a href="katalog_list.html">ЖБИ</a></p>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+                    <img src="http://mathsolutionz.org/wp-content/uploads/2016/05/diagonal.png" alt="...">
+                    <p><a href="katalog_list.html">Кирпич, Газобетон, Брус</a></p>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+                    <img src="http://mathsolutionz.org/wp-content/uploads/2016/05/diagonal.png" alt="...">
+                    <p><a href="katalog_list.html">Что-то еще</a></p>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+                    <img src="http://mathsolutionz.org/wp-content/uploads/2016/05/diagonal.png" alt="...">
+                    <p><a href="katalog_list.html">Что-то еще</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-3">
+            <h1>Все производители и оптовые компании</h1>
+            <div class="row">
+                <div class="col-sm-7 col-lg-7">
+                    <div class="row katalog-row">
+                        {% for div in range(5) %}
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="http://hardwaresfera.com/wp-content/uploads/2016/09/Home-96.png">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">ООО Строй-Сервис-Монтаж</h4>
+                                <p><strong>Место деятельности:</strong> Новосибирск<br>
+                                <strong>Продукция:</strong> ЖБИ, бетон<br>
+                                <strong>Адрес:</strong> Под часами, на том-же месте
+                                <p><strong>Телефон:</strong> 00-00-00</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <nav class="zayavki-paginator" aria-label="...">
+                                <ul class="pagination">
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3 col-lg-offset-1">
+                    <a class="underline-none" href="index.html">
+                        <button type="submit" class="btn btn-default btn-lg btn-block button-style katalog-button">
+                            <h4>Оставить заявку</h4>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-3">
+            <a href="#"><h3><u><a href="index.html">Оставить заявку</a></u></h3></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

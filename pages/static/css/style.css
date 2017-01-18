@@ -143,6 +143,19 @@ body {
     border: 2px solid black;
 }
 
+.start-form-button > button > h4 > a {
+    text-decoration: none;
+    color:black;
+}
+
+.start-form-button > button:hover > h4 > a {
+    color:white;
+}
+
+.start-form-button > button > h4 > a:hover {
+    color:white;
+}
+
 /* Orders */
 
 .start-orders-container > div {
@@ -205,6 +218,10 @@ body {
     background-color: white;
 }
 
+.borders-none:hover {
+    border: none !important;
+}
+
 /* Carousel */
 
 .start-carousel-row > div{
@@ -237,7 +254,12 @@ body {
 
 .button-style:hover{
     color:white;
-    background-color: black;
+    background-color: #FF8A80;
+    border: 2px solid black;
+}
+
+.underline-none:hover {
+    text-decoration: none;
 }
 
 .vcenter {
@@ -263,12 +285,13 @@ body {
 
 .pagination>li>a,
 .pagination>li>span {
-  border: 1px solid black;
-  color: black;
+    border: 1px solid black;
+    color: black;
 }
 .pagination>li>a:hover {
-  background: black;
-  color:white;
+    border: 1px solid black;
+    background: #FF8A80;
+    color:white;
 }
 
 

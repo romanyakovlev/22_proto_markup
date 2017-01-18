@@ -1,0 +1,119 @@
+{% extends "base_template.html" %}
+
+
+{% block content %}
+<!--Orders-->
+
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-xs-2 col-sm-1 col-md-offset-2 col-lg-offset-2 vcenter">
+        <a href="index.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAaVBMVEX///8AAADn5+cFBQXGxsa+vr50dHSbm5uioqKurq4UFBTx8fHu7u5paWl5eXlcXFw3NzdEREQPDw80NDQ8PDzj4+MjIyP5+fnb29u4uLgdHR0mJibV1dV/f3+Pj49SUlKRkZEtLS1VVVUW9TQVAAABXklEQVRYhe3Xa2+CMBSA4VMElIuTi4JzTGT//0euVKiFFnraxixLON+wfR8lqVEA3jx17dZHRfHp1O8I2TkIfe8iPHt7gfVlJgr1/Ts17NNEFEJCcsMeQBRyQmLTHiAteyEwA4ReFNAA67NkvOQCFpj1LwEJSD0VOvpSEeAART8KNwyg7AG87nkstcBCzwUdsNiPggZY6anwxU+UVT8IxYqg6bUC688rPcCl6gXful8VUP2KgOwXBXRPhZtCMOgBrrJg1CsEw14SjPuZYNFPBIs+OvrQxIPA++hnj+x9+p30uBAP/ZVCC2d8PnvCtjKhgmr4/AG9OhgBTCigaUN2/xYANGX1SmyAyWzABrwJuJ/4PGyABxFmsoIEjiLw8VeAV9O5OADsn6a3Af8LyENhOhHIxJV8EZCGA9LIgK/axp57U9VKIwHQyruGOw/llVbu6Tt5s+E/+cl8Bf/wqJ9feVIXyR1vSiQAAAAASUVORK5CYII" alt="">
+            Логотип
+        </a>
+    </div><!--
+ --><div class="col-xs-8 vcenter ">
+    </div>
+    </div>
+</div>
+
+<div class="container start-orders-container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <h2>Свежие заявки</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <div class="margin-for-rows-and-hrs">
+                <div class="row">
+
+                    <!-- Orders navigation -->
+
+                    <nav class="navbar navbar-orders">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-left">
+                                    <ul class="list-inline">
+                                        <li><a href="#" class="start-orders-a">раздел:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="start-orders-a" href="#" data-toggle="dropdown">Все<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Первый раздел</a></li>
+                                                   <li><a href="#">Второй раздел</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pull-right">
+                                    <ul class="list-inline">
+                                        <li><a href="#" class="start-orders-a">Регион:</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="#" class="start-orders-a" data-toggle="dropdown">
+                                                    Новосибирская область<span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a href="#">Москва</a></li>
+                                                   <li><a href="#">не Москва</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <hr>
+                {% for x in range(5) %}
+                    <div class="row start-orders-div">
+                        <p>
+                            <a class="pull-left">вчера, в 21:30</a>
+                            <span class="glyphicon glyphicon-star pull-right">
+                                <a href="#">в закладки</a>
+                            </span>
+                        </p>
+                        <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
+                        <p>Алексей</p>
+                        <a class="btn btn-default button-style borders-none" href="#" role="button">Показать телефон</a>
+                        <font>12 просмотров</font>
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 start-form-button">
+            <a class="underline-none" href="index.html">
+            <button type="submit" class="btn btn-default btn-lg btn-block button-style">
+                <h4>Просмотреть все заявки</h4>
+            </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Paginator -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="zayavki-paginator" aria-label="...">
+                <ul class="pagination">
+                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">... 10</a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
