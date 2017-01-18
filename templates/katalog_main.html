@@ -1,6 +1,10 @@
 {% extends "base_template.html" %}
 
 
+{% block title %}
+    <title>Каталог | Главная</title>
+ {% endblock %}
+
 {% block content %}
 
 <div class="container-fluid">
@@ -104,5 +108,7 @@
         </div>
     </div>
 </div>
+
+{% include 'footer_template.html' %}
 
 {% endblock %}

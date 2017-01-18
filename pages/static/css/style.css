@@ -1,4 +1,4 @@
-/* Font  */
+/* Font setup  */
 
 @font-face {
     font-family:BalsamiqSansRegular;
@@ -12,7 +12,7 @@ body {
 /* Breadcrumbs on navigation*/
 
 .breadcrumb > li + li:before {
-    color: #ccc;
+    color: black;
     content: ">";
     padding: 0 5px;
 }
@@ -84,7 +84,7 @@ body {
     text-align:center;
 }
 
-#yes_id {
+#close_id1 {
     color:black;
 }
 
@@ -232,6 +232,7 @@ body {
     background: white;
 }
 
+
 .start-carousel-div > a {
     background: none !important;
 }
@@ -349,7 +350,7 @@ body {
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover{
-    background-color: black;
+    background-color: #FF8A80;
 }
 
 @media (max-width:768px){

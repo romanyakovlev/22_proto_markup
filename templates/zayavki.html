@@ -1,5 +1,9 @@
 {% extends "base_template.html" %}
 
+{% block title %}
+    <title>Заявки</title>
+ {% endblock %}
+
 
 {% block content %}
 <!--Orders-->
@@ -115,5 +119,7 @@
         </div>
     </div>
 </div>
+
+{% include 'footer_template.html' %}
 
 {% endblock %}
