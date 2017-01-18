@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:BalsamiqSansRegular;
-    src:url(fonts/BalsamiqSansRegular.ttf);
+    src:url(static/fonts/BalsamiqSansRegular.ttf);
 }
 
 body {
