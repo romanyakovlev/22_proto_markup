@@ -122,7 +122,7 @@ body {
     padding-top:10px;
 }
 
-.start-form-row-1 > div > div > div > label > font {
+.start-form-row-1 > div > div > div > label > span {
     color:#9E9E9E;
 }
 
@@ -185,7 +185,7 @@ body {
     text-decoration: underline;
 }
 
-.start-orders-div > font {
+.start-orders-div > span {
     font-size:12px;
 }
 
@@ -193,6 +193,11 @@ body {
     border-radius:10px;
     background-color:#E0E0E0;
     border:none;
+}
+
+.span-h4-height {
+    font-size:18px;
+    font-weight:normal;
 }
 
 .margin-for-rows-and-hrs {
