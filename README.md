@@ -11,6 +11,16 @@
 - YSlow
 - GitHub Pages
 
+# Запуск
+Клонируем репозиторий, заходим в него, устанавливаем зависимости:
+``
+pip install -r requirements.txt
+``
+Запускаем скрипт:
+``
+python3 run.py
+``
+
 # Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
