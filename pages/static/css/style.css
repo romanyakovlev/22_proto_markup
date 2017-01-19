@@ -132,7 +132,8 @@ body {
 }
 
 .start-form-button {
-    padding-bottom:20px;word-wrap: break-word;
+    padding-bottom:20px;
+    word-wrap: break-word;
 }
 
 .start-form-button button {
@@ -262,6 +263,13 @@ body {
     color:white;
     background-color: #FF8A80;
     border: 2px solid black;
+}
+
+.button-a-style {
+    width: 55%;
+    border: 2px solid black;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
 }
 
 .underline-none:hover {
