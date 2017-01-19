@@ -3,7 +3,6 @@
 репозиторий сайта "Поставщики Новосибирска" 
 
 # [ССЫЛКА](https://romanyakovlev.github.io/22_proto_markup/pages/index.html)
-
 # Что использовал
 - Bootstrap
 - Jinja2(staticjinja)
