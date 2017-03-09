@@ -68,6 +68,7 @@ body {
 /* Popover */
 
 .popover-div {
+    top: 40px;
     height: 150px;
     width: 245px;
     font-size:16px;
@@ -84,6 +85,10 @@ body {
 
 .popover-p2 {
     text-align:center;
+}
+
+.popover {
+    top:40px !important;
 }
 
 #close_id1 {
@@ -199,6 +204,7 @@ body {
 }
 
 .span-h4-height {
+    white-space: normal;
     font-size:18px;
     font-weight:normal;
 }
@@ -232,7 +238,7 @@ body {
 
 /* Carousel */
 
-.start-carousel-row > div{
+.start-carousel-row > div {
     word-wrap: break-word;
 }
 
