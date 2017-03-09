@@ -31,17 +31,19 @@ body {
 .main-nav-a {
     text-decoration: underline;
     color: #0D47A1 !important;
-}
-
-.main-nav-region {
-    color:black;
-}
-
-.navbar-nav li a {
     line-height: 40px;
     height: 40px;
     padding-top: 0;
 }
+
+.main-nav-region {
+    color:black;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 0;
+}
+
+
 
 /* Footer */
 
@@ -68,7 +70,6 @@ body {
 /* Popover */
 
 .popover-div {
-    top: 40px;
     height: 150px;
     width: 245px;
     font-size:16px;
@@ -85,10 +86,6 @@ body {
 
 .popover-p2 {
     text-align:center;
-}
-
-.popover {
-    top:40px !important;
 }
 
 #close_id1 {
@@ -129,7 +126,7 @@ body {
     padding-top:10px;
 }
 
-.start-form-row-1 > div > div > div > label > span {
+.start-form-row-1-span {
     color:#9E9E9E;
 }
 
@@ -184,27 +181,27 @@ body {
     padding-top:10px;
 }
 
-.start-orders-div > p  a,
-.start-orders-div > p  span {
+.start-orders-div-1 {
     color:#757575;
 }
 
-.start-orders-div > p > span > a {
+.start-orders-div-2 {
     text-decoration: underline;
+    color:#757575;
 }
 
-.start-orders-div > span {
+.start-orders-div-span {
     font-size:12px;
 }
 
-.start-orders-div >  a{
+.start-orders-div-a {
     border-radius:10px;
     background-color:#E0E0E0;
     border:none;
+    color:#757575;
 }
 
 .span-h4-height {
-    white-space: normal;
     font-size:18px;
     font-weight:normal;
 }
@@ -238,7 +235,7 @@ body {
 
 /* Carousel */
 
-.start-carousel-row > div {
+.start-carousel-row > div{
     word-wrap: break-word;
 }
 
@@ -251,7 +248,7 @@ body {
     background: none !important;
 }
 
-.start-carousel-div > a > span {
+.start-carousel-div-span {
     color: black;
 }
 
@@ -357,16 +354,17 @@ body {
     border:2px solid black;
 }
 
- .style-pills > li > a{
+ .style-pills-a{
      border: 2px solid black;
      border-radius: 0px;
-     padding: 5px 10px 5px 10px;
+     padding: 5px 10px 5px 10px !important;
      color: black;
  }
 
 .style-pills > li+li {
     margin-top:0px;
 }
+
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
@@ -444,6 +442,6 @@ background-color: #E0E0E0;
     border: 2px solid black;
 }
 
-.border-style-2 div {
+.border-style-2-div {
     padding-top: 15px;
 }
