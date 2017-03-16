@@ -17,7 +17,6 @@ body {
     padding: 0 5px;
 }
 
-
 /* BASE TEMPLATE */
 
 /* Main navigation */
@@ -87,7 +86,6 @@ body {
 #close_id1 {
     color:black;
 }
-
 
 /* START_PAGE_TEMPLATE */
 
@@ -212,8 +210,6 @@ body {
     background-color: white;
 }
 
-
-
 /* Carousel */
 
 .start-carousel-row > div{
@@ -223,7 +219,6 @@ body {
 .active {
     background: white;
 }
-
 
 .carousel-control.left, .carousel-control.right {
     background-image: none;
@@ -272,7 +267,6 @@ body {
     box-shadow:5px 5px;
 }
 
-
 /* ZAYAVKI_TEMPLATE */
 
 /* Paginator */
@@ -293,7 +287,6 @@ body {
     background: #FF8A80;
     color:white;
 }
-
 
  /*  PROFILE TEMPLATE */
 
@@ -346,7 +339,6 @@ body {
     margin-top:0px;
 }
 
-
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover{
@@ -358,7 +350,6 @@ body {
         position: relative;
     }
 }
-
 
 /* KATALOG MAIN TEMPLATE */
 
@@ -392,6 +383,11 @@ body {
     border: 2px solid black;
 }
 
+@media (max-width:768px){
+    .full-width-button {
+        width: 100%;
+    }
+}
 
 /* KATALOG LIST TEMPLATE */
 
@@ -410,7 +406,6 @@ body {
     margin:0px;
 }
 
-
 /* KATALOG END PAGE TEMPLATE */
 
 .katalog-button-2 {
@@ -428,4 +423,12 @@ background-color: #E0E0E0;
 
 .borders-none:hover {
     border: none;
+}
+
+span{
+    white-space: normal;
+}
+
+.media-object {
+    margin: auto;
 }

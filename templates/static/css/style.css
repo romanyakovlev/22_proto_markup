@@ -383,6 +383,12 @@ body {
     border: 2px solid black;
 }
 
+@media (max-width:768px){
+    .full-width-button {
+        width: 100%;
+    }
+}
+
 /* KATALOG LIST TEMPLATE */
 
 .katalog-col-1 {
@@ -417,4 +423,12 @@ background-color: #E0E0E0;
 
 .borders-none:hover {
     border: none;
+}
+
+span{
+    white-space: normal;
+}
+
+.media-object {
+    margin: auto;
 }
