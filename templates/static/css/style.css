@@ -17,7 +17,6 @@ body {
     padding: 0 5px;
 }
 
-
 /* BASE TEMPLATE */
 
 /* Main navigation */
@@ -28,9 +27,9 @@ body {
     border-style: none;
 }
 
-.main-nav-a {
+.navbar-default .navbar-nav>li>a {
     text-decoration: underline;
-    color: #0D47A1 !important;
+    color: #0D47A1;
     line-height: 40px;
     height: 40px;
     padding-top: 0;
@@ -43,14 +42,10 @@ body {
     padding-top: 0;
 }
 
-
-
 /* Footer */
 
 .footer-container {
     background-color: #E0E0E0;
-    margin: 0px !important;
-    padding: 0px !important;
 }
 
 .footer-row-1 {
@@ -91,7 +86,6 @@ body {
 #close_id1 {
     color:black;
 }
-
 
 /* START_PAGE_TEMPLATE */
 
@@ -146,19 +140,6 @@ body {
     margin:auto;
     padding: 10px 30px 10px 30px;
     border: 2px solid black;
-}
-
-.start-form-button > button > h4 > a {
-    text-decoration: none;
-    color:black;
-}
-
-.start-form-button > button:hover > h4 > a {
-    color:white;
-}
-
-.start-form-button > button > h4 > a:hover {
-    color:white;
 }
 
 /* Orders */
@@ -229,10 +210,6 @@ body {
     background-color: white;
 }
 
-.borders-none:hover {
-    border: none !important;
-}
-
 /* Carousel */
 
 .start-carousel-row > div{
@@ -243,9 +220,8 @@ body {
     background: white;
 }
 
-
-.start-carousel-div > a {
-    background: none !important;
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
 }
 
 .start-carousel-div-span {
@@ -291,7 +267,6 @@ body {
     box-shadow:5px 5px;
 }
 
-
 /* ZAYAVKI_TEMPLATE */
 
 /* Paginator */
@@ -302,17 +277,16 @@ body {
     margin-left: auto;
 }
 
-.pagination>li>a,
-.pagination>li>span {
+.pagination-a{
     border: 1px solid black;
     color: black;
 }
-.pagination>li>a:hover {
+
+.pagination-a:hover {
     border: 1px solid black;
     background: #FF8A80;
     color:white;
 }
-
 
  /*  PROFILE TEMPLATE */
 
@@ -354,17 +328,16 @@ body {
     border:2px solid black;
 }
 
- .style-pills-a{
+.style-pills-a{
      border: 2px solid black;
      border-radius: 0px;
-     padding: 5px 10px 5px 10px !important;
+     padding: 5px 10px 5px 10px;
      color: black;
- }
+}
 
 .style-pills > li+li {
     margin-top:0px;
 }
-
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
@@ -374,15 +347,13 @@ body {
 
 @media (max-width:768px){
     .off-abs-pos-for-sm-screens {
-        position: relative !important;
+        position: relative;
     }
 }
-
 
 /* KATALOG MAIN TEMPLATE */
 
 .style-thumbnail div {
-    border: none !important;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -412,7 +383,6 @@ body {
     border: 2px solid black;
 }
 
-
 /* KATALOG LIST TEMPLATE */
 
 .katalog-col-1 {
@@ -430,7 +400,6 @@ body {
     margin:0px;
 }
 
-
 /* KATALOG END PAGE TEMPLATE */
 
 .katalog-button-2 {
@@ -444,4 +413,8 @@ background-color: #E0E0E0;
 
 .border-style-2-div {
     padding-top: 15px;
+}
+
+.borders-none:hover {
+    border: none;
 }
